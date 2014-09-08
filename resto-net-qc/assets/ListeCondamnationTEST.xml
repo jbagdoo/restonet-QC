@@ -1,0 +1,116 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <SOMMR_CONDM>
+    <Nom_exploitant>CENTRE DE SANTE D'EASTMAN INC.</Nom_exploitant>
+    <Raison_sociale>SPA EASTMAN</Raison_sociale>
+    <Description_infraction>A DETENU EN VUE DE LA VENTE, UN PRODUIT ALTERABLE A LA CHALEUR SANS LE MAINTENIR CONSTAMMENT A UNE TEMPERATURE INTERNE ET AMBIANTE NE DEPASSANT PAS 4 °C JUSQU'A SA LIVRAISON AU CONSOMMATEUR.</Description_infraction>
+    <Adresse_lieu_infraction>895 CHEMIN DES DILIGENCES EASTMAN, (QC) J0E1P0</Adresse_lieu_infraction>
+    <Type_etablissement>RESTAURANT</Type_etablissement>
+    <Date_infraction>2012-05-15T00:00:00-04:00</Date_infraction>
+    <Date_jugement>2012-05-28T00:00:00-04:00</Date_jugement>
+    <Date_publication>2012-07-04T00:00:00-04:00</Date_publication>
+    <Amende>250 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>LACOMBE JONATHAN</Nom_exploitant>
+   
+    <Description_infraction>A EXPLOITE UN LIEU, OU UNE PERSONNE AFFECTEE A LA PREPARATION DES PRODUITS, AU LAVAGE OU AU NETTOYAGE DU MATERIEL ET DE L'EQUIPEMENT PORTAIT DES BIJOUX.</Description_infraction>
+    <Adresse_lieu_infraction>257 ROUTE DU LONG SAULT, LOCAL 3 SAINT-ANDRE-D'ARGENTEUIL, (QC) J0V1X0</Adresse_lieu_infraction>
+    <Type_etablissement>RESTAURANT</Type_etablissement>
+    <Information_etablissement>L'exploitant, qui opérait à la date de l'infraction, a cessé ses opérations</Information_etablissement>
+    <Date_infraction>2011-06-03T00:00:00-04:00</Date_infraction>
+    <Date_jugement>2013-01-25T00:00:00-05:00</Date_jugement>
+    <Date_publication>2013-02-01T00:00:00-05:00</Date_publication>
+    <Amende>250 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>LACOMBE JONATHAN</Nom_exploitant>
+    <Raison_sociale>REST "O" BORD DE L'EAU</Raison_sociale>
+    <Description_infraction>A DETENU EN VUE DE LA VENTE, UN PRODUIT ALTERABLE A LA CHALEUR SANS LE MAINTENIR CONSTAMMENT A UNE TEMPERATURE INTERNE ET AMBIANTE NE DEPASSANT PAS 4 °C JUSQU'A SA LIVRAISON AU CONSOMMATEUR.</Description_infraction>
+    <Adresse_lieu_infraction>260 ROUTE DU LONG SAULT SAINT-ANDRE-D'ARGENTEUIL, (QC) J0V1X0</Adresse_lieu_infraction>
+    <Type_etablissement>RESTAURANT</Type_etablissement>
+    <Information_etablissement>L'exploitant, qui opérait à la date de l'infraction, a cessé ses opérations</Information_etablissement>
+    <Date_infraction>2012-02-23T00:00:00-05:00</Date_infraction>
+    <Date_jugement>2013-05-16T00:00:00-04:00</Date_jugement>
+    <Date_publication>2013-05-28T00:00:00-04:00</Date_publication>
+    <Amende>250 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>DESJARDINS MICHEL</Nom_exploitant>
+    <Description_infraction>A DETENU EN VUE DE LA VENTE, UN PRODUIT ALTERABLE A LA CHALEUR SANS LE MAINTENIR CONSTAMMENT A UNE TEMPERATURE INTERNE ET AMBIANTE NE DEPASSANT PAS 4 °C JUSQU'A SA LIVRAISON AU CONSOMMATEUR.</Description_infraction>
+    <Adresse_lieu_infraction>1 RUE DES ERABLES SAINT-ANDRE-D'ARGENTEUIL, (QC) J0V1X0</Adresse_lieu_infraction>
+    <Type_etablissement>DECOUPE A FORFAIT</Type_etablissement>
+    <Date_infraction>2011-11-29T00:00:00-05:00</Date_infraction>
+    <Date_jugement>2013-04-19T00:00:00-04:00</Date_jugement>
+    <Date_publication>2013-05-06T00:00:00-04:00</Date_publication>
+    <Amende>250 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>GROUPE RESTAURANTS IMVESCOR INC.</Nom_exploitant>
+    <Raison_sociale>RESTAURANT MIKES</Raison_sociale>
+    <Description_infraction>A DETENU EN VUE DE LA VENTE, UN PRODUIT ALTERABLE A LA CHALEUR SANS LE MAINTENIR CONSTAMMENT A UNE TEMPERATURE INTERNE ET AMBIANTE NE DEPASSANT PAS 4 °C JUSQU'A SA LIVRAISON AU CONSOMMATEUR (RECIDIVE).</Description_infraction>
+    <Adresse_lieu_infraction>304 BOUL. LASALLE BAIE-COMEAU, (QC) G4Z2W4</Adresse_lieu_infraction>
+    <Type_etablissement>RESTAURANT</Type_etablissement>
+    <Date_infraction>2013-05-10T00:00:00-04:00</Date_infraction>
+    <Date_jugement>2014-01-15T00:00:00-05:00</Date_jugement>
+    <Date_publication>2014-03-24T00:00:00-04:00</Date_publication>
+    <Amende>750 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>HAREL KATHY</Nom_exploitant>
+    <Raison_sociale>CAFETERIA KATHY HAREL</Raison_sociale>
+    <Description_infraction>A DETENU EN VUE DE LA VENTE, UN PRODUIT ALTERABLE A LA CHALEUR SANS LE MAINTENIR CONSTAMMENT A UNE TEMPERATURE INTERNE ET AMBIANTE NE DEPASSANT PAS 4 °C JUSQU'A SA LIVRAISON AU CONSOMMATEUR.</Description_infraction>
+    <Adresse_lieu_infraction>100 ROUTE MARITIME BAIE-COMEAU, (QC) G4Z2L6</Adresse_lieu_infraction>
+    <Type_etablissement>CAFETERIA</Type_etablissement>
+    <Information_etablissement>L'exploitant, qui opérait à la date de l'infraction, a cessé ses opérations</Information_etablissement>
+    <Date_infraction>2013-06-13T00:00:00-04:00</Date_infraction>
+    <Date_jugement>2013-07-03T00:00:00-04:00</Date_jugement>
+    <Date_publication>2013-10-02T00:00:00-04:00</Date_publication>
+    <Amende>248 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>9249-2750 QUEBEC INC.</Nom_exploitant>
+    <Raison_sociale>RESTAURANT HO KING</Raison_sociale>
+    <Description_infraction>A DETENU EN VUE DE LA VENTE, UN PRODUIT ALTERABLE A LA CHALEUR SANS LE MAINTENIR CONSTAMMENT A UNE TEMPERATURE INTERNE ET AMBIANTE NE DEPASSANT PAS 4 °C JUSQU'A SA LIVRAISON AU CONSOMMATEUR.</Description_infraction>
+    <Adresse_lieu_infraction>625 BOUL. LAFLECHE BAIE-COMEAU, (QC) G5C1C5</Adresse_lieu_infraction>
+    <Type_etablissement>RESTAURANT</Type_etablissement>
+    <Date_infraction>2012-10-29T00:00:00-04:00</Date_infraction>
+    <Date_jugement>2013-07-22T00:00:00-04:00</Date_jugement>
+    <Date_publication>2013-08-02T00:00:00-04:00</Date_publication>
+    <Amende>250 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>9249-2750 QUEBEC INC.</Nom_exploitant>
+    <Raison_sociale>RESTAURANT HO KING</Raison_sociale>
+    <Description_infraction>A EXPLOITE UN ETABLISSEMENT OU L'ON PREPARE, VEND OU DETIENT DES PRODUITS EN VUE DE LA VENTE OU DE LA FOURNITURE DE SERVICES MOYENNANT REMUNERATION, SANS Y MAINTENIR LES LOCAUX ET LE MATERIEL PROPRES (ETAT GENERALISE).</Description_infraction>
+    <Adresse_lieu_infraction>625 BOUL. LAFLECHE BAIE-COMEAU, (QC) G5C1C5</Adresse_lieu_infraction>
+    <Type_etablissement>RESTAURANT</Type_etablissement>
+    <Date_infraction>2012-10-29T00:00:00-04:00</Date_infraction>
+    <Date_jugement>2013-07-22T00:00:00-04:00</Date_jugement>
+    <Date_publication>2013-08-02T00:00:00-04:00</Date_publication>
+    <Amende>2000 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>9249-2750 QUEBEC INC.</Nom_exploitant>
+    <Raison_sociale>RESTAURANT HO KING</Raison_sociale>
+    <Description_infraction>A EXPLOITE UN LIEU, OU UNE PERSONNE AFFECTEE A LA PREPARATION DES PRODUITS, AU LAVAGE OU AU NETTOYAGE DU MATERIEL ET DE L'EQUIPEMENT PORTAIT DES BIJOUX.</Description_infraction>
+    <Adresse_lieu_infraction>625 BOUL. LAFLECHE BAIE-COMEAU, (QC) G5C1C5</Adresse_lieu_infraction>
+    <Type_etablissement>RESTAURANT</Type_etablissement>
+    <Date_infraction>2012-10-29T00:00:00-04:00</Date_infraction>
+    <Date_jugement>2013-07-22T00:00:00-04:00</Date_jugement>
+    <Date_publication>2013-08-02T00:00:00-04:00</Date_publication>
+    <Amende>250 $</Amende>
+  </SOMMR_CONDM>
+  <SOMMR_CONDM>
+    <Nom_exploitant>GROUPE RESTAURANTS IMVESCOR INC.</Nom_exploitant>
+    <Raison_sociale>RESTAURANT MIKES</Raison_sociale>
+    <Description_infraction>A DETENU EN VUE DE LA VENTE, UN PRODUIT ALTERABLE A LA CHALEUR SANS LE MAINTENIR CONSTAMMENT A UNE TEMPERATURE INTERNE ET AMBIANTE NE DEPASSANT PAS 4 °C JUSQU'A SA LIVRAISON AU CONSOMMATEUR (RECIDIVE).</Description_infraction>
+    <Adresse_lieu_infraction>304 BOUL. LASALLE BAIE-COMEAU, (QC) G4Z2W4</Adresse_lieu_infraction>
+    <Type_etablissement>RESTAURANT</Type_etablissement>
+    <Date_infraction>2012-11-07T00:00:00-05:00</Date_infraction>
+    <Date_jugement>2013-07-02T00:00:00-04:00</Date_jugement>
+    <Date_publication>2013-10-15T00:00:00-04:00</Date_publication>
+    <Amende>750 $</Amende>
+  </SOMMR_CONDM>
+
+</NewDataSet>

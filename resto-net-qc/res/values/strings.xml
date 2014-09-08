@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <string translatable="false"  name="app_name">Restonet QC</string>
+     <string name="searchlabel">Find</string>
+       <string name="amende_txt">" FINE: "</string>
+      <string name="amende_plus_txt">" FINES"</string>
+       <string name="judgement">"Judgement date: " </string>   
+      <string name="searchhint">Find by establishment name</string>
+      <string name="detailTitre">Infraction details</string>
+      <string name="nomLabel">Establishment name:</string>
+      <string name="proprietaireLabel">Owner:</string>
+	
+	  <string name="adresseLabel">Address:</string>
+	  <string name="villeLabel">City:</string>
+	  <string name="date_infractionLabel">Infraction date:</string>
+	  <string name="categorieLabel">Category:</string>
+	  <string name="descriptionLabel">Infraction description:</string>
+	  <string name="date_jugementLabel">Judgement date:</string>
+	  <string name="montantLabel">Fine:</string>
+	  <string name="tab_recente">Latest fines</string>
+	  <string name="tab_plus">The most fines</string>
+	  <string name="tab_alpha">Alphabetical order</string>
+	  <string name="tab_fortes">The highest fines</string>
+	  <string name="action_label_search">Find</string>
+	  <string name="dialog">Get the lastest update of the City of Montréal\'s data</string>
+	  <string name="dialog_ok">Continue</string>
+	  <string name="dialog_cancel">Cancel</string>
+	   <string name="no_google_play">Google Play Service must be installed to show map</string>
+	   <string name="no_internet">Please enable internet access</string>
+	   <string name="maj_donnees">Data update in progress</string>
+	   <string name="maj_deja">An update is already running</string>
+	   <string name="no_result">No infractions found for that establishment!</string>
+	    <string name="no_xml">City data is not available, try again later</string>
+	   <string name="licence">This product contains open data granted under license to use by the Government Administration available at www.données.gouv.qc.ca. The granting of a license does not constitute an endorsement of the product by the Government Administration.</string>
+	    <string name="app_descrip">Restonet QC is your tool for visualizing the official inspection data of the Ministère de l\'Agriculture, des Pêcheries et de l\'Alimentation du Québec (MAPAQ) which publishes a list of food establishments convicted for breaches of the regulations on food products (excluding institutions located in the territory of the city of Montreal) on health protection of animals and the minimum processing of marine products.</string>
+	    <string name="app_credits">Android application created by Jean Bagdoo in 2013</string> 
+	      <string name="no_geocode">Geocoder failed to update map, restart device and try again</string> 
+
+</resources>

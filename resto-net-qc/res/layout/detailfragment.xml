@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp" >
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+        
+
+
+    <TextView
+        android:id="@+id/TextView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="@string/nomLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp" 
+         android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/TextViewEtablissement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:textSize="24sp"
+         android:layout_below="@+id/TextView12" />
+
+    <TextView
+        android:id="@+id/TextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="@string/proprietaireLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp"
+         android:layout_below="@+id/TextViewEtablissement" />
+
+    <TextView
+        android:id="@+id/TextViewProprietaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp" 
+         android:layout_below="@+id/TextView10"/>
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="@string/adresseLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp"
+         android:layout_below="@+id/TextViewProprietaire" />
+
+
+    <TextView
+        android:id="@+id/TextViewAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:textSize="24sp"
+         android:layout_below="@+id/TextView08" />
+
+  
+
+
+    <TextView
+        android:id="@+id/TextViewVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:textSize="24sp" 
+         android:layout_below="@+id/TextViewAdresse"/>
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="@string/categorieLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp" 
+         android:layout_below="@+id/TextViewVille"/>
+
+    <TextView
+        android:id="@+id/TextViewCategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   
+        android:textSize="24sp"
+         android:layout_below="@+id/TextView04"
+         />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="@string/date_infractionLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp"
+         android:layout_below="@+id/TextViewCategorie" />
+
+    <TextView
+        android:id="@+id/TextViewDate_Infraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:textSize="24sp" 
+        
+       android:layout_below="@+id/TextView02"
+   
+       />
+
+    <TextView
+        android:id="@+id/TextViewJuge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:text="@string/date_jugementLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp" 
+         android:layout_below="@+id/TextViewDate_Infraction"/>
+
+    <TextView
+        android:id="@+id/TextViewDate_Jugement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 
+        android:textSize="24sp" 
+        
+         android:layout_below="@+id/TextViewJuge"
+        
+          />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="@string/montantLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp"  android:layout_below="@+id/TextViewDate_Jugement"
+         android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/TextViewMontant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" 
+         android:layout_below="@+id/TextViewDate_Jugement"
+         android:layout_toRightOf="@+id/TextView01"/>
+
+    <TextView
+        android:id="@+id/dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text=" $"
+        android:textSize="22sp"
+         android:layout_below="@+id/TextViewDate_Jugement"
+        android:layout_toRightOf="@+id/TextViewMontant"
+    />
+
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    
+        android:text="@string/descriptionLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp"
+        android:layout_below="@+id/TextView01"  />
+
+
+<TextView 
+    android:layout_width="match_parent"
+    android:id="@+id/TextViewDescription"
+    android:layout_height="wrap_content"
+    android:textSize="24sp"
+   android:layout_alignParentBottom="true"
+   android:layout_below="@+id/TextView03"
+    />
+
+ 
+</RelativeLayout>
+</ScrollView>

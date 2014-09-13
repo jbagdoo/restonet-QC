@@ -14,21 +14,21 @@ public class Entry {
 	private String proprietaire;
 	private String etablissement;
 	private String adresse;
-	private String ville;
+	private String info;
 	private String date_infraction;
 	private String categorie;
 	private String description;
 	private String   date_jugement;
 	private String montant;
 
-	public Entry(long id, String proprietaire, String categorie, String etablissement, String adresse, String ville, String description, String date_infraction, String date_jugement, String montant ) {
+	public Entry(long id, String proprietaire, String categorie, String etablissement, String adresse, String info, String description, String date_infraction, String date_jugement, String montant ) {
 		super();
 		this.id = id;
 		this.proprietaire = proprietaire;
 		this.categorie = categorie;
 		this.etablissement = etablissement;
 		this.adresse = adresse;
-		this.ville = ville;
+		this.info = info;
 		this.description = description;
 		this.date_infraction = date_infraction;
 		this.date_jugement = date_jugement;
@@ -71,11 +71,11 @@ public class Entry {
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
 	}
-	public String getVille() {
-		return ville;
+	public String getInfo() {
+		return info;
 	}
-	public void setVille(String ville) {
-		this.ville = ville;
+	public void setInfo(String info) {
+		this.info = info;
 	}
 	public String getDescription() {
 		return description;
@@ -140,7 +140,7 @@ public class Entry {
 		copy.description = description;
 		copy.etablissement = etablissement;
 		copy.adresse = adresse;
-		copy.ville = ville;
+		copy.info = info;
 		copy.date_infraction = date_infraction;
 		copy.date_jugement = date_jugement;
 		copy.montant = montant;

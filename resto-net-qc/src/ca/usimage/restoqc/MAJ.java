@@ -1,7 +1,6 @@
 package ca.usimage.restoqc;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 import java.util.Locale;
 
@@ -117,12 +116,10 @@ public class MAJ extends Service{
 		    		             if (geocoder.isPresent()) {
 		    		            	 adresse = msg.getAdresse() ;//+"," + msg.getVille() + ", QC CANADA";
 		    		            	 // insert a blank in Postal code, geocoder prefers 
-		    		            	 Log.e(" "+adresse," orig adresse");
+		    		            	
 		    		            	 String first = adresse.substring( 0, adresse.length()-3 );
 		    		            	 String second = adresse.substring( adresse.length()-3, adresse.length() );
 		    		            	 adresse = first + " " + second;
-		    		            	 
-		    		            	 Log.e(" "+adresse," new adresse");
 		    		            	 
 	    	      	           
 	    	     		        try{
@@ -137,7 +134,7 @@ public class MAJ extends Service{
 	    	     			       }
 	    	     			         else {  // if adresse is null, postal code is probably bad, remove postal code and try again
 	    	     			        	 
-	    	     			        	 adresse = msg.getAdresse() +"," + msg.getVille().substring(0, msg.getVille().length()-6);// + ", QC CANADA"; 
+	    	     			        	 adresse = msg.getAdresse(); //+"," + msg.getVille().substring(0, msg.getVille().length()-6);// + ", QC CANADA"; 
 	    	     			        	try{
 	   	    	     			         adresse_list  = geocoder.getFromLocationName(adresse, 1);
 
@@ -170,7 +167,7 @@ public class MAJ extends Service{
 //		    		  }
 		    	      			 ajout_resto.put("etablissement", msg.getEtablissement());
 		    	      			 ajout_resto.put("proprietaire", msg.getProprietaire());
-		    	      			 ajout_resto.put("ville", msg.getVille());
+		    	      			 ajout_resto.put("info", msg.getInfo());
 		    	      			 ajout_resto.put("montant", msg.getMontant());
 		    	      			 ajout_resto.put("adresse", msg.getAdresse());
 		    	      			 ajout_resto.put("categorie", msg.getCategorie());

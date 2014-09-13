@@ -98,23 +98,24 @@ public class ListeFragment extends ListFragment implements LoaderManager.LoaderC
 //	        Log.e("bindView="," "+pos);
 	        final Long ID =  getItemId(pos);
 	        
-	        String prop =c.getString(c.getColumnIndex(RestoDatabase.COL_PROPRIO));
+	        String info =c.getString(c.getColumnIndex(RestoDatabase.COL_INFO));
 	       
 	        ImageView exploitant = (ImageView) view.findViewById(R.id.Exploitant);
-	        if (prop.indexOf("(Fermé)") > 0){
-	        	exploitant.setVisibility(View.VISIBLE);
-	        	exploitant.setImageResource(R.drawable.closed);
-	        	
-	        }
-	        else if (prop.indexOf("changement d") > 0){
-	        	exploitant.setVisibility(View.VISIBLE);
-	        	exploitant.setImageResource(R.drawable.new_owner);
-	        }
+	       if (info != null) {
+	        	if (info.indexOf("cessé") > 0){
+	        		exploitant.setVisibility(View.VISIBLE);
+	        		exploitant.setImageResource(R.drawable.closed);
+	        	}
+	        
+//	        else if (info.indexOf("changement d") > 0){
+//	        	exploitant.setVisibility(View.VISIBLE);
+//	        	exploitant.setImageResource(R.drawable.new_owner);
+//	        }
 	        
 	        else {
 	        	exploitant.setVisibility(View.INVISIBLE);
 	        }
-	        
+	       }
             ImageButton mapButton = (ImageButton)view.findViewById(R.id.ImageButton01);
 	        mapButton.setOnClickListener(new View.OnClickListener() {
 
@@ -146,8 +147,8 @@ public class ListeFragment extends ListFragment implements LoaderManager.LoaderC
 		
 	 		
 		
-	    String[] uiBindFrom = { RestoDatabase.COL_ETAB,RestoDatabase.COL_MONTANT, RestoDatabase.COL_ADR, RestoDatabase.COL_DATE_JUGE };
-	    int[] uiBindTo = { R.id.Etablissement, R.id.Montant,R.id.Adresse, R.id.Date};
+	    String[] uiBindFrom = { RestoDatabase.COL_ETAB, RestoDatabase.COL_INFO, RestoDatabase.COL_MONTANT, RestoDatabase.COL_ADR, RestoDatabase.COL_DATE_JUGE };
+	    int[] uiBindTo = { R.id.Etablissement, R.id.Exploitant, R.id.Montant,R.id.Adresse, R.id.Date};
 	    adapter = new MyCursorAdapter(
 	            getActivity(), R.layout.rownew,
 	            null, uiBindFrom, uiBindTo,

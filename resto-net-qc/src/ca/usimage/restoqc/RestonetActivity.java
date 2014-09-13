@@ -2,6 +2,7 @@ package ca.usimage.restoqc;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -13,6 +14,7 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.app.ActivityManager;
+import android.app.ActivityManager.RunningAppProcessInfo;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.app.AlertDialog;
 import android.app.DialogFragment;
@@ -20,11 +22,15 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.app.SearchManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -262,10 +268,56 @@ public class RestonetActivity extends Activity implements ListItemSelectListener
 		case R.id.itemABOUT:
 			showAbout();
 			 return true;
+		case R.id.itemMTL:
+			if (!isPackageInstalled("ca.usimage.resto", this)){
+			Intent intent = new Intent(Intent.ACTION_VIEW);
+			intent.setData(Uri.parse("market://details?id=ca.usimage.resto"));
+			startActivity(intent);
+			}else
+			{
+				//if (isProcessRunning("ca.usimage.resto")) {
+					
+					Intent i = new Intent();
+					i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					i.setAction("android.intent.action.VIEW");
+					i.setComponent(ComponentName.unflattenFromString("ca.usimage.resto/ca.usimage.resto.RestonetActivity"));
+					startActivity(i);
+//				} else {
+//					
+//					Intent i = new Intent();
+//					i.setClassName("PACKAGE_NAME","SPECIFIC_CLASS");
+//					i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//					startActivity(i);
+//				}
+			}
+		
+			 return true;
 		}
 
 		return false;
 	}
+    
+    public boolean isProcessRunning(String process)
+    {
+       ActivityManager activityManager = (ActivityManager) this.getSystemService( ACTIVITY_SERVICE );
+       List<RunningAppProcessInfo> procInfos = activityManager.getRunningAppProcesses();
+       for(int i = 0; i < procInfos.size(); i++){
+          if(procInfos.get(i).processName.equals(process)) {
+             return true;
+          }  
+       }
+
+       return false;
+    }
+    private boolean isPackageInstalled(String packagename, Context context) {
+        PackageManager pm = context.getPackageManager();
+        try {
+            pm.getPackageInfo(packagename, PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (NameNotFoundException e) {
+            return false;
+        }
+    }
 
     @Override
     public boolean onSearchRequested() {

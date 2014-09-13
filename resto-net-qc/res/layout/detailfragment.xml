@@ -66,17 +66,24 @@
        
         android:textSize="24sp"
          android:layout_below="@+id/TextView08" />
-
-  
-
-
     <TextView
-        android:id="@+id/TextViewVille"
+        android:id="@+id/TextViewInfoLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
        
-        android:textSize="24sp" 
-         android:layout_below="@+id/TextViewAdresse"/>
+        android:text="@string/infoLabel"
+        android:textColor="@color/holoBlue"
+        android:textSize="22sp"
+         android:layout_below="@+id/TextViewAdresse" />
+
+ <TextView
+        android:id="@+id/TextViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textColor="#ffff0000"
+        android:textSize="24sp"
+         android:layout_below="@+id/TextViewInfoLabel" />
+        
 
     <TextView
         android:id="@+id/TextView04"
@@ -86,7 +93,7 @@
         android:text="@string/categorieLabel"
         android:textColor="@color/holoBlue"
         android:textSize="22sp" 
-         android:layout_below="@+id/TextViewVille"/>
+         android:layout_below="@+id/TextViewInfo"/>
 
     <TextView
         android:id="@+id/TextViewCategorie"

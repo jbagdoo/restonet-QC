@@ -33,8 +33,8 @@ public class PlusListeFragment extends ListeFragment  {
 	
 
 		
-	    String[] uiBindFrom = { RestoDatabase.COL_ETAB,  RestoDatabase.COL_ADR, RestoDatabase.COL_COUNT };
-	    int[] uiBindTo = { R.id.Etablissement, R.id.Adresse, R.id.Count };
+	    String[] uiBindFrom = { RestoDatabase.COL_ETAB,  RestoDatabase.COL_INFO, RestoDatabase.COL_ADR, RestoDatabase.COL_COUNT };
+	    int[] uiBindTo = { R.id.Etablissement, R.id.Exploitant, R.id.Adresse, R.id.Count };
 	    adapter = new MyCursorAdapter(
 	            getActivity(), R.layout.row_plus,
 	            null, uiBindFrom, uiBindTo,
@@ -57,7 +57,7 @@ public void onResume()
 	
 	
 	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-		  String[] projection = { RestoDatabase.ID, RestoDatabase.COL_PROPRIO,RestoDatabase.COL_ETAB, RestoDatabase.COL_MONTANT, RestoDatabase.COL_ADR, "count(*)" };
+		  String[] projection = { RestoDatabase.ID, RestoDatabase.COL_PROPRIO,RestoDatabase.COL_ETAB, RestoDatabase.COL_INFO, RestoDatabase.COL_MONTANT, RestoDatabase.COL_ADR, "count(*)" };
 	    switch (id){
 	
 	    		

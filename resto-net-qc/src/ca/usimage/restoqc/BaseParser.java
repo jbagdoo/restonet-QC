@@ -19,7 +19,7 @@ public abstract class BaseParser   implements RestoParser {
 	static final String CATEGORIE = "categorie";
 	static final String ETABLISSEMENT = "etablissement";
 	static final String ADRESSE = "adresse";
-	static final String VILLE = "ville";
+	static final String INFO = "info";
 	static final String DESCRIPTION = "description";
 	static final String DATE_INFRACTION = "date_infraction";
 	static final String DATE_JUGEMENT = "date_jugement";

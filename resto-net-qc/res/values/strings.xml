@@ -11,7 +11,7 @@
       <string name="detailTitre">Infraction details</string>
       <string name="nomLabel">Establishment name:</string>
       <string name="proprietaireLabel">Owner:</string>
-	
+	  <string name="infoLabel">Information:</string>
 	  <string name="adresseLabel">Address:</string>
 	  <string name="villeLabel">City:</string>
 	  <string name="date_infractionLabel">Infraction date:</string>

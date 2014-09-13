@@ -23,7 +23,7 @@ public class AndroidSaxParser  implements RestoParser  {
 		static final String CATEGORIE = "Type_etablissement";
 		static final String ETABLISSEMENT = "Raison_sociale";
 		static final String ADRESSE = "Adresse_lieu_infraction";
-		static final String VILLE = "Information_etablissement";
+		static final String INFO = "Information_etablissement";
 		static final String DESCRIPTION = "Description_infraction";
 		static final String DATE_INFRACTION = "Date_infraction";
 		static final String DATE_JUGEMENT = "Date_jugement";
@@ -56,6 +56,7 @@ public class AndroidSaxParser  implements RestoParser  {
 				currentEntry.setProprietaire(body);
 				// the following line is used to set raison sociale to the owner name whenever raison sociale is missing
 				currentEntry.setEtablissement(body);
+				currentEntry.setInfo(null);
 			}
 		});
 		
@@ -64,8 +65,6 @@ public class AndroidSaxParser  implements RestoParser  {
 		
 		raison.setEndTextElementListener(new EndTextElementListener(){
 			public void end(String body) {
-				
-				Log.e("etablissement= ", body);
 				currentEntry.setEtablissement(body);
 			}
 		
@@ -87,9 +86,9 @@ public class AndroidSaxParser  implements RestoParser  {
 			}
 		});
 
-		contrevenant.getChild(VILLE).setEndTextElementListener(new EndTextElementListener(){
+		contrevenant.getChild(INFO).setEndTextElementListener(new EndTextElementListener(){
 			public void end(String body) {
-				currentEntry.setVille(body);
+				currentEntry.setInfo(body);
 			}
 		});
 		

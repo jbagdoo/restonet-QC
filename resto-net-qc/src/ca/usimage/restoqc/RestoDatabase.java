@@ -18,7 +18,7 @@ import android.util.Log;
 public class RestoDatabase  extends SQLiteOpenHelper {
 	 private static String DB_PATH = "/data/data/ca.usimage.restoqc/databases/";
     private static final String DEBUG_TAG = "RestoDatabase";
-    private static final int DB_VERSION = 2;
+    private static final int DB_VERSION = 3;
     
        
     private static final String DB_NAME = "Resto";
@@ -28,6 +28,7 @@ public class RestoDatabase  extends SQLiteOpenHelper {
     public static final String COL_PROPRIO = "proprietaire";
     public static final String COL_MONTANT = "montant";
     public static final String COL_LAT = "latitude";
+    public static final String COL_INFO = "info";
     public static final String COL_LONG = "longitude";
     public static final String COL_ADR = "adresse";
     public static final String COL_COUNT = "count(*)";
@@ -130,7 +131,7 @@ public class RestoDatabase  extends SQLiteOpenHelper {
 
         String createQuery = "CREATE TABLE resto" +
                 "(_id integer primary key autoincrement," +
-                "id TEXT, proprietaire TEXT,  categorie TEXT , etablissement TEXT,  adresse TEXT, ville TEXT, description TEXT, date_infraction timestamp, date_jugement timestamp, montant INTEGER, latitude DOUBLE, longitude DOUBLE  );";
+                "id TEXT, proprietaire TEXT,  categorie TEXT , etablissement TEXT,  adresse TEXT, info TEXT, description TEXT, date_infraction timestamp, date_jugement timestamp, montant INTEGER, latitude DOUBLE, longitude DOUBLE  );";
     
              db.execSQL(createQuery);
     }

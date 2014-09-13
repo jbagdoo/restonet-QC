@@ -61,7 +61,7 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
 
 	@Override
 	public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
-		String etabText, prop, adresseText, categorieText, Date_infraText, villeText, Date_jugeText, DescText, MontantText;
+		String etabText, prop, adresseText, categorieText, Date_infraText, infoText, Date_jugeText, DescText, MontantText;
 		cursor.moveToFirst();
 		
 		int etabIndex = cursor.getColumnIndex("etablissement");
@@ -79,10 +79,10 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
 		TextView Adresse  = (TextView) getView().findViewById(R.id.TextViewAdresse);
 		Adresse.setText(adresseText);
 		
-		int villeIndex = cursor.getColumnIndex("ville");
-		villeText = cursor.getString(villeIndex);
-		TextView Ville  = (TextView) getView().findViewById(R.id.TextViewVille);
-		Ville.setText(villeText);
+		int infoIndex = cursor.getColumnIndex("info");
+		infoText = cursor.getString(infoIndex);
+		TextView Info  = (TextView) getView().findViewById(R.id.TextViewInfo);
+		Info.setText(infoText);
 		
 		int categorieIndex = cursor.getColumnIndex("categorie");
 		categorieText = cursor.getString(categorieIndex);

@@ -282,13 +282,7 @@ public class RestonetActivity extends Activity implements ListItemSelectListener
 					i.setAction("android.intent.action.VIEW");
 					i.setComponent(ComponentName.unflattenFromString("ca.usimage.resto/ca.usimage.resto.RestonetActivity"));
 					startActivity(i);
-//				} else {
-//					
-//					Intent i = new Intent();
-//					i.setClassName("PACKAGE_NAME","SPECIFIC_CLASS");
-//					i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//					startActivity(i);
-//				}
+
 			}
 		
 			 return true;

@@ -95,18 +95,17 @@ public class ListeFragment extends ListFragment implements LoaderManager.LoaderC
 	        int pos;
 	        
 	        pos = c.getPosition();
-//	        Log.e("bindView="," "+pos);
+	        
 	        final Long ID =  getItemId(pos);
 	        
 	        String info =c.getString(c.getColumnIndex(RestoDatabase.COL_INFO));
 	       
 	        ImageView exploitant = (ImageView) view.findViewById(R.id.Exploitant);
-	       if (info != null) {
-	        	if (info.indexOf("cessé") > 0){
+	       if ((info != null) && (info.indexOf("cessé") > 0)){
 	        		exploitant.setVisibility(View.VISIBLE);
 	        		exploitant.setImageResource(R.drawable.closed);
 	        	}
-	        
+	         
 //	        else if (info.indexOf("changement d") > 0){
 //	        	exploitant.setVisibility(View.VISIBLE);
 //	        	exploitant.setImageResource(R.drawable.new_owner);
@@ -115,7 +114,8 @@ public class ListeFragment extends ListFragment implements LoaderManager.LoaderC
 	        else {
 	        	exploitant.setVisibility(View.INVISIBLE);
 	        }
-	       }
+	    
+	       
             ImageButton mapButton = (ImageButton)view.findViewById(R.id.ImageButton01);
 	        mapButton.setOnClickListener(new View.OnClickListener() {
 

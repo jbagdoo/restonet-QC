@@ -249,7 +249,7 @@ public void onLoadFinished(Loader<Cursor> arg0, Cursor arg1) {
         // once all items have been scanned and positioned, zoom on current selected item (at ROWID)
  
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(LAT,LNG)));
-        Log.e( "Position", "LAT= "+LAT+" LNG= "+LNG);
+        
 
     
         googleMap.animateCamera(CameraUpdateFactory.zoomTo(zoom));

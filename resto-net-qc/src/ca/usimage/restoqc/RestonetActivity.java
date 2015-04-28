@@ -251,10 +251,10 @@ public class RestonetActivity extends Activity implements ListItemSelectListener
     public boolean onOptionsItemSelected(MenuItem item) {
     	 
 		switch (item.getItemId()) {
-//		case R.id.itemMAJ:
-//			  
-//				   showDialog();
-//				   return true;
+		case R.id.itemMAJ:
+			  
+				   showDialog();
+				   return true;
 
 		case R.id.itemRECH:
             	onSearchRequested(); 
